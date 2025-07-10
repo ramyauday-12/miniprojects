@@ -1,0 +1,74 @@
+** start of index.html **
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Stylized To-Do List</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <ul class="todo-list">
+      <li>
+        <input type="checkbox" id="task1" />
+        <label for="task1">Complete HTML Section</label>
+        <ul class="sub-item">
+          <li><a class="sub-item-link" href="https://www.freecodecamp.org/" target="_blank">HTML Practice</a></li>
+        </ul>
+      </li>
+      <li>
+        <input type="checkbox" id="task2" />
+        <label for="task2">Finish CSS Styling</label>
+        <ul class="sub-item">
+          <li><a class="sub-item-link" href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank">MDN CSS</a></li>
+        </ul>
+      </li>
+      <li>
+        <input type="checkbox" id="task3" />
+        <label for="task3">Review Git Basics</label>
+        <ul class="sub-item">
+          <li><a class="sub-item-link" href="https://git-scm.com/" target="_blank">Git Docs</a></li>
+        </ul>
+      </li>
+      <li>
+        <input type="checkbox" id="task4" />
+        <label for="task4">Push Project to GitHub</label>
+        <ul class="sub-item">
+          <li><a class="sub-item-link" href="https://github.com/" target="_blank">GitHub</a></li>
+        </ul>
+      </li>
+    </ul>
+  </body>
+</html>
+** end of index.html **
+
+** start of styles.css **
+
+/* Remove default link underline */
+a {
+  text-decoration: none;
+  color: teal;
+}
+
+/* Visited link color */
+a:visited {
+  color: purple;
+}
+
+/* Hover color */
+a:hover {
+  color: orange;
+}
+
+/* Active (clicked) color */
+a:active {
+  color: red;
+}
+
+/* Focus outline */
+a:focus {
+  outline: 2px solid blue;
+}
+
+
+** end of styles.css **
+
