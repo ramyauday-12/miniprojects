@@ -1,0 +1,68 @@
+** start of index.html **
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Confidential Email</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main id="email">
+      <div id="confidential">CONFIDENTIAL</div>
+      <div id="top-secret">TOP SECRET</div>
+
+      <p>This message contains <span class="blurred">sensitive</span> information meant only for the intended recipient.</p>
+      <p>Please avoid sharing <span class="blurred">classified data</span> with unauthorized individuals.</p>
+      <p>Access to <span class="blurred">secure files</span> is restricted to internal personnel.</p>
+    </main>
+  </body>
+</html>
+
+
+** end of index.html **
+
+** start of styles.css **
+
+/* Email Container */
+#email {
+  padding: 50px;
+  margin-top: 50px;
+  width: 500px;
+  border: 2px solid #888;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  background-color: #fffefc;
+  line-height: 1.6;
+}
+
+/* Confidential + Top Secret Labels */
+#confidential,
+#top-secret {
+  display: inline-block;
+  padding: 8px 12px;
+  margin-left: 10px;
+  border: 2px dashed #c00;
+  background-color: #ffe6e6;
+  font-weight: bold;
+  color: #900;
+  transform: rotate(-5deg);
+}
+
+/* Slight different rotation for variation */
+#top-secret {
+  transform: rotate(5deg);
+  border-color: #0077cc;
+  background-color: #e6f0ff;
+  color: #0051a3;
+}
+
+/* Blurred Words */
+.blurred {
+  filter: blur(3px);
+  color: #333;
+}
+
+
+** end of styles.css **
+
