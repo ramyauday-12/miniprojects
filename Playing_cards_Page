@@ -1,0 +1,93 @@
+** start of index.html **
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Playing Cards</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main id="playing-cards">
+    <div class="card">
+      <div class="left">♠ A</div>
+      <div class="middle">
+        <span>♠</span>
+        <span>♠</span>
+        <span>♠</span>
+      </div>
+      <div class="right">A ♠</div>
+    </div>
+    <div class="card">
+      <div class="left">♥ K</div>
+      <div class="middle">
+        <span>♥</span>
+        <span>♥</span>
+        <span>♥</span>
+      </div>
+      <div class="right">K ♥</div>
+    </div>
+    <div class="card">
+      <div class="left">♦ 10</div>
+      <div class="middle">
+        <span>♦</span>
+        <span>♦</span>
+        <span>♦</span>
+      </div>
+      <div class="right">10 ♦</div>
+    </div>
+  </main>
+</body>
+</html>
+
+
+** end of index.html **
+
+** start of styles.css **
+
+/* Container holding all cards */
+#playing-cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 40px;
+  background-color: #f8f9fa;
+}
+
+/* Individual card */
+.card {
+  width: 150px;
+  height: 200px;
+  background-color: white;
+  border: 2px solid #222;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px;
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+}
+
+/* Card sections */
+.left {
+  align-self: flex-start;
+  font-weight: bold;
+}
+
+.middle {
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  font-size: 24px;
+}
+
+.right {
+  align-self: flex-end;
+  font-weight: bold;
+}
+
+
+** end of styles.css **
+
