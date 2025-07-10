@@ -1,0 +1,148 @@
+** start of index.html **
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Job Application Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <form>
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" required />
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" required />
+
+        <label for="position">Position:</label>
+        <select id="position" required>
+          <option value="">Select a position</option>
+          <option value="frontend">Frontend Developer</option>
+          <option value="backend">Backend Developer</option>
+          <option value="fullstack">Full Stack Developer</option>
+        </select>
+
+        <fieldset class="radio-group">
+          <legend>Availability</legend>
+          <label>
+            <input type="radio" name="availability" value="full-time" /> Full-Time
+          </label>
+          <label>
+            <input type="radio" name="availability" value="part-time" /> Part-Time
+          </label>
+        </fieldset>
+
+        <label for="message">Message:</label>
+        <textarea id="message" rows="4" required></textarea>
+
+        <button type="submit">Submit Application</button>
+      </form>
+    </div>
+  </body>
+</html>
+
+
+** end of index.html **
+
+** start of styles.css **
+
+/* Container and Form */
+.container {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #f9f9f9;
+  font-family: sans-serif;
+  border-radius: 10px;
+}
+
+form label {
+  display: block;
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+/* :first-of-type - style first input differently */
+input:first-of-type {
+  border-radius: 6px;
+  background-color:  #fefefe;
+}
+
+/* :focus styles */
+input:focus,
+textarea:focus {
+  border-color: #4a90e2;
+  outline: none;
+}
+
+/* :invalid styles */
+input:invalid,
+select:invalid,
+textarea:invalid {
+  border-color: red;
+}
+
+/* :valid styles */
+input:valid,
+select:valid,
+textarea:valid {
+  border-color: green;
+}
+
+/* Radio Button Styling */
+.radio-group {
+  margin-top: 20px;
+}
+
+.radio-group label {
+  margin-right: 20px;
+  font-weight: normal;
+}
+
+/* :checked styling for radio inputs */
+.radio-group input[type="radio"]:checked {
+  border: 2px solid #00796b;
+  background-color: #b2dfdb;
+  box-shadow: 0 0 5px #00796b;
+}
+
+/* Change associated label color when selected */
+.radio-group input[type="radio"]:checked + label,
+.radio-group label:has(input[type="radio"]:checked) {
+  color: #00796b;
+}
+
+/* Button hover */
+button:hover {
+  background-color: #4a90e2;
+  color: white;
+  cursor: pointer;
+}
+
+/* Submit Button Styling */
+button {
+  margin-top: 20px;
+  padding: 10px 15px;
+  background: #00796b;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+
+** end of styles.css **
+
