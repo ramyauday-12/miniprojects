@@ -1,0 +1,78 @@
+** start of index.html **
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Blog Post Card</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="blog-post-card">
+      <img
+        class="post-img"
+        src="https://cdn.freecodecamp.org/curriculum/labs/cover-photo.jpg"
+        alt="Cover photo of a blog post"
+      />
+      <div class="post-content">
+        <h2 class="post-title">How I Started Coding</h2>
+        <p class="post-excerpt">
+          In this blog, I share how I got into web development and the tools I used to grow my skills.
+        </p>
+        <a class="read-more" href="#">Read More</a>
+      </div>
+    </div>
+  </body>
+</html>
+
+
+** end of index.html **
+
+** start of styles.css **
+
+.blog-post-card {
+  background-color: white;
+  border-radius: 10px;
+  width: 350px;
+  text-align: left;
+  margin: 40px auto;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.post-img {
+  width: 100%;
+  border-bottom: 3px solid #ddd;
+  display: block;
+}
+
+.post-content {
+  padding: 20px;
+}
+
+.post-title {
+  color: #2c3e50;
+  margin: 10px 0;
+}
+
+.post-excerpt {
+  color: #555;
+  margin: 10px 0 20px;
+}
+
+.read-more {
+  color: white;
+  background-color: #3498db;
+  margin: 10px 0;
+  padding: 10px 15px;
+  border-radius: 5px;
+  display: inline-block;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.read-more:hover {
+  background-color: #2980b9;
+}
+
+
+** end of styles.css **
