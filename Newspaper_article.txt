@@ -1,0 +1,63 @@
+** start of index.html **
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="styles.css"/>  <title>Newspaper Article</title>
+  </head>
+  <body>
+<div class="newspaper">
+  <h1 class="name">The Hindu</h1>
+  <p class="date">July 10, 2025</p>
+  <h2 class="headline">Lithium ion battery recycling could be $3.5bn industry by 2030: report</h2>
+  <h4 class="sub-headline">Only 1% of end-of-life lithium ion batteries in India are being recycled, a report by the India Cellular and Electronics Association and Accenture said.</h4>
+  <h6 class="author">Published - July 09, 2025 08:11 pm IST - NEW DELHI</h6>
+  <p class="text">Recycling lithium ion batteries could spark an industry worth $3.5 billion by 2030 with the right policy steps, said a report released on Wednesday by the India Cellular and Electronics Association (ICEA) and Accenture. “India currently recycles only 1% of its end-of-life lithium-ion batteries into usable materials,” ICEA said in a statement accompanying the report. </p>
+  <p class="text">“This low recovery rate signals an urgent environmental challenge and a major economic opportunity waiting to be unlocked.” Recovering more end-of-life lithium ion batteries could feed back into “India’s growing demand for electric vehicles, consumer electronics, and energy storage systems,” ICEA said. </p>
+</div>
+  </body>
+</html>
+
+** end of index.html **
+
+** start of styles.css **
+
+html{
+  font-size:24px;
+}
+.newspaper{
+  font-size:16px;
+  font-family:"Open Sans", sans-serif;
+}
+.name{
+  font-size:2rem;
+font-family:"Times New Roman", serif;
+}
+.name, .author{
+text-transform:uppercase;
+}
+.headline{
+font-size:2em;
+font-weight: bold;
+}
+.sub-headline{
+  font-weight:100;
+  font-size:1.5em;
+font-style:italic;
+}
+.author{
+font-weight:bold;
+}
+.text{
+text-indent:20px;
+line-height:2em;
+}
+.text::first-letter{
+font-size:2em;
+font-weight:bold;
+}
+
+** end of styles.css **
+
