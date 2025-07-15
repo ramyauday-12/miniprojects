@@ -1,0 +1,81 @@
+** start of index.html **
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+<link rel="stylesheeet" href="styles.css"/>   <title>Tribute Page</title>
+  </head>
+
+  <body>
+    <main id="main">
+      <h1 id="title">Dr. A.P.J. Abdul Kalam - The Missile Man of India</h1>
+      <figure id="img-div">
+        <img id="image" src="https://i.pinimg.com/736x/37/3d/c2/373dc2aa305e1462d9235ccf8aacc203.jpg" alt="Dr. APJ Abdul Kalam">
+        <figcaption id="img-caption">
+        Dr. Kalam delivering a speech – always inspiring millions with his words and vision.
+      </figcaption>
+      </figure>
+       <section id="tribute-info">
+         <p>
+        Dr. A.P.J. Abdul Kalam was a renowned Indian scientist and the 11th President of India. He played a key role in India’s missile development programs and was deeply involved in the country's nuclear tests. Known as the "People’s President", he was a visionary who believed in empowering youth and transforming India into a developed nation through science and education.
+      </p>
+      </section>
+      <p>
+        Learn more about him on <a id="tribute-link" href="https://en.wikipedia.org/wiki/A._P._J._Abdul_Kalam" target="_blank">Wikipedia</a>
+      </p>
+    </main>
+  </body>
+</html>
+
+** end of index.html **
+
+** start of styles.css **
+
+body{
+font-family:"Segoe UI",Tahoma, Geneva, Verdana, sans-serif;
+line-height:1.5;
+background-color:#f4f4f4;
+color:#333;
+margin:0;
+padding:20px;
+text-align:center;
+}
+title{
+font-size:2.2rem;
+}
+#img-div {
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+#image{
+max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  border-radius: 8px;
+}
+#img-caption {
+  margin-top: 10px;
+  font-style: italic;
+}
+
+#tribute-info {
+  max-width: 700px;
+  margin: 0 auto 20px;
+  text-align: left;
+}
+
+a#tribute-link {
+  color: #0077cc;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a#tribute-link:hover {
+  text-decoration: underline;
+}
+
+** end of styles.css **
+
